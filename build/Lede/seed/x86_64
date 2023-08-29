@@ -195,3 +195,6 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
+CONFIG_PACKAGE_luci-theme-opentomato=y
+CONFIG_PACKAGE_luci-theme-opentomcat=y
+CONFIG_TARGET_ROOTFS_PARTSIZE=1024
