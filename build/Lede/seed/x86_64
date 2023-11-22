@@ -2,7 +2,33 @@ CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
 CONFIG_BIND_ENABLE_DOH=y
+CONFIG_DOCKER_OPTIONAL_FEATURES=y
 CONFIG_GRUB_IMAGES=y
+CONFIG_KERNEL_CFQ_GROUP_IOSCHED=y
+CONFIG_KERNEL_CGROUP_HUGETLB=y
+CONFIG_KERNEL_CGROUP_PERF=y
+CONFIG_KERNEL_HUGETLBFS=y
+CONFIG_KERNEL_HUGETLB_PAGE=y
+CONFIG_KERNEL_MEMCG_SWAP_ENABLED=y
+CONFIG_KERNEL_PERF_EVENTS=y
+CONFIG_KERNEL_TRANSPARENT_HUGEPAGE=y
+CONFIG_KERNEL_TRANSPARENT_HUGEPAGE_ALWAYS=y
+CONFIG_LIBSODIUM_MINIMAL=y
+CONFIG_MBEDTLS_AES_C=y
+CONFIG_MBEDTLS_CMAC_C=y
+CONFIG_MBEDTLS_DES_C=y
+CONFIG_MBEDTLS_ECP_DP_CURVE25519_ENABLED=y
+CONFIG_MBEDTLS_ECP_DP_SECP256K1_ENABLED=y
+CONFIG_MBEDTLS_ECP_DP_SECP256R1_ENABLED=y
+CONFIG_MBEDTLS_ECP_DP_SECP384R1_ENABLED=y
+CONFIG_MBEDTLS_ENTROPY_FORCE_SHA256=y
+CONFIG_MBEDTLS_GCM_C=y
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED=y
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED=y
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED=y
+CONFIG_MBEDTLS_KEY_EXCHANGE_PSK_ENABLED=y
+CONFIG_MBEDTLS_NIST_KW_C=y
+CONFIG_MBEDTLS_RSA_NO_CRT=y
 # CONFIG_PACKAGE_UnblockNeteaseMusic-Go is not set
 # CONFIG_PACKAGE_adbyby is not set
 CONFIG_PACKAGE_bash=y
@@ -12,12 +38,18 @@ CONFIG_PACKAGE_boost=y
 CONFIG_PACKAGE_boost-date_time=y
 CONFIG_PACKAGE_boost-program_options=y
 CONFIG_PACKAGE_boost-system=y
+CONFIG_PACKAGE_chinadns-ng=y
 CONFIG_PACKAGE_cifsmount=y
+CONFIG_PACKAGE_coreutils=y
+CONFIG_PACKAGE_coreutils-base64=y
 CONFIG_PACKAGE_coreutils-nohup=y
+CONFIG_PACKAGE_coreutils-timeout=y
 # CONFIG_PACKAGE_ddns-scripts is not set
 # CONFIG_PACKAGE_ddns-scripts_aliyun is not set
 # CONFIG_PACKAGE_ddns-scripts_dnspod is not set
 CONFIG_PACKAGE_diffutils=y
+CONFIG_PACKAGE_dns2socks=y
+CONFIG_PACKAGE_dns2tcp=y
 # CONFIG_PACKAGE_dnsmasq_full_dhcpv6 is not set
 CONFIG_PACKAGE_exfat-mkfs=y
 CONFIG_PACKAGE_frpc=y
@@ -29,6 +61,7 @@ CONFIG_PACKAGE_hd-idle=y
 CONFIG_PACKAGE_hdparm=y
 CONFIG_PACKAGE_httping=y
 CONFIG_PACKAGE_hysteria=y
+CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ipt2socks=y
 CONFIG_PACKAGE_iptables-mod-conntrack-extra=y
 CONFIG_PACKAGE_iptables-mod-iprange=y
@@ -55,14 +88,22 @@ CONFIG_PACKAGE_kmod-fs-nfsd=y
 CONFIG_PACKAGE_kmod-fs-smbfs-common=y
 CONFIG_PACKAGE_kmod-fs-squashfs=y
 CONFIG_PACKAGE_kmod-inet-diag=y
+CONFIG_PACKAGE_kmod-ip6tables=y
 # CONFIG_PACKAGE_kmod-ipsec is not set
 CONFIG_PACKAGE_kmod-ipt-conntrack-extra=y
 CONFIG_PACKAGE_kmod-ipt-iprange=y
 # CONFIG_PACKAGE_kmod-ipt-ipsec is not set
+CONFIG_PACKAGE_kmod-ipt-nat6=y
+CONFIG_PACKAGE_kmod-ipt-physdev=y
 CONFIG_PACKAGE_kmod-ipt-socket=y
 # CONFIG_PACKAGE_kmod-iptunnel6 is not set
 CONFIG_PACKAGE_kmod-l2tp=y
 CONFIG_PACKAGE_kmod-netlink-diag=y
+# CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
+CONFIG_PACKAGE_kmod-nf-ipt6=y
+CONFIG_PACKAGE_kmod-nf-log6=y
+CONFIG_PACKAGE_kmod-nf-nat6=y
+CONFIG_PACKAGE_kmod-nf-reject6=y
 CONFIG_PACKAGE_kmod-nf-socket=y
 CONFIG_PACKAGE_kmod-pppol2tp=y
 # CONFIG_PACKAGE_kmod-shortcut-fe is not set
@@ -82,16 +123,21 @@ CONFIG_PACKAGE_kmod-usb3=y
 # CONFIG_PACKAGE_kmod-wireguard is not set
 CONFIG_PACKAGE_libcap-bin=y
 CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
+CONFIG_PACKAGE_libcares=y
+CONFIG_PACKAGE_libev=y
 CONFIG_PACKAGE_libltdl=y
 CONFIG_PACKAGE_liblua5.3=y
 CONFIG_PACKAGE_liblzma=y
 CONFIG_PACKAGE_libmaxminddb=y
+CONFIG_PACKAGE_libmbedtls=y
 # CONFIG_PACKAGE_libminiupnpc is not set
 # CONFIG_PACKAGE_libnatpmp is not set
 CONFIG_PACKAGE_libnet-1.2.x=y
 CONFIG_PACKAGE_libnetsnmp=y
 CONFIG_PACKAGE_libpcap=y
 CONFIG_PACKAGE_libruby=y
+CONFIG_PACKAGE_libsodium=y
+CONFIG_PACKAGE_libudns=y
 CONFIG_PACKAGE_libyaml=y
 CONFIG_PACKAGE_lua-cjson=y
 CONFIG_PACKAGE_lua-maxminddb=y
@@ -121,13 +167,13 @@ CONFIG_PACKAGE_luci-app-passwall_Iptables_Transparent_Proxy=y
 # CONFIG_PACKAGE_luci-app-wireguard is not set
 # CONFIG_PACKAGE_luci-app-xlnetacc is not set
 # CONFIG_PACKAGE_luci-app-zerotier is not set
-CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-frpc-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-hd-idle-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-netdata-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
 # CONFIG_PACKAGE_luci-proto-wireguard is not set
+CONFIG_PACKAGE_microsocks=y
 # CONFIG_PACKAGE_miniupnpd is not set
 CONFIG_PACKAGE_nano=y
 CONFIG_PACKAGE_netdata=y
@@ -137,6 +183,7 @@ CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_patch=y
 # CONFIG_PACKAGE_pdnsd-alt is not set
 CONFIG_PACKAGE_ppp-mod-pppol2tp=y
+CONFIG_PACKAGE_resolveip=y
 CONFIG_PACKAGE_ruby=y
 CONFIG_PACKAGE_ruby-bigdecimal=y
 CONFIG_PACKAGE_ruby-date=y
@@ -149,9 +196,16 @@ CONFIG_PACKAGE_ruby-stringio=y
 CONFIG_PACKAGE_ruby-strscan=y
 CONFIG_PACKAGE_ruby-yaml=y
 CONFIG_PACKAGE_screen=y
+CONFIG_PACKAGE_shadowsocks-libev-ss-local=y
+CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
+CONFIG_PACKAGE_shadowsocks-libev-ss-server=y
+CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=y
+CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir=y
+CONFIG_PACKAGE_simple-obfs=y
 CONFIG_PACKAGE_sing-box=y
 CONFIG_PACKAGE_snmpd=y
 # CONFIG_PACKAGE_strongswan is not set
+CONFIG_PACKAGE_tcping=y
 CONFIG_PACKAGE_tcpping=y
 CONFIG_PACKAGE_tree=y
 CONFIG_PACKAGE_trojan=y
@@ -168,6 +222,7 @@ CONFIG_PACKAGE_vim-fuller=y
 # CONFIG_PACKAGE_wget-ssl is not set
 # CONFIG_PACKAGE_wireguard-tools is not set
 CONFIG_PACKAGE_xl2tpd=y
+CONFIG_PACKAGE_xray-core=y
 CONFIG_PACKAGE_xray-plugin=y
 CONFIG_PACKAGE_xz=y
 CONFIG_PACKAGE_xz-utils=y
